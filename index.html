@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORAL DREAM</title>
+    <!-- 폰트링크 -->
+    <link rel="stylesheet" href="./fonts/EI/elmessiri.css">
+    <link rel="stylesheet" href="./fonts/IBM/elmessiri.css">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./css/intro.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="main_banner">
+        <img src="./images/intro_logo.png" alt="인트로 로고" class="intro_logo">
+        <div class="wedding">
+            <div class="wedding_box">
+                <h1>
+                    FLORAL DREAM
+                    <span>WEDDING</span>
+                </h1>
+                <a href="./index.html">웨딩 보기</a>
+            </div>
+        </div>
+        <div class="salon">
+            <div class="salon_box">
+                <h1>
+                    FLORAL DREAM &nbsp;
+                    <span>SALON</span>
+                </h1>
+                <a href="./salon.html">살롱 보기</a>
+            </div>
+        </div>
+    </div><!--main_banner-->
+
+
+
+    <script>
+        $(function () {
+
+            $(window).resize(function () {
+
+                var width = window.innerWidth;
+
+                if (width < 1215) {
+
+                    $('.intro_logo').attr('src', './images/intro_logo.png2')
+
+                }
+
+                else { $('.intro_logo').attr('src', './images/intro_logo.png2'); }
+
+            }).resize();
+
+        });
+    </script>
+</body>
+
+</html>
