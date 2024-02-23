@@ -1,0 +1,848 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'IBM Plex Sans KR';
+    font-size: 20px;
+    line-height: 30px;
+    color: #08261c;
+    /* font-family: 'El Messiri'; */
+}
+
+
+
+/* main_banner */
+.main_banner {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper {
+    height: 100%;
+
+}
+
+.pag span {
+    background-color: #f2bbb6;
+}
+
+.logo_ {
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.s_slide>img {
+    width: 100%;
+}
+
+/* salon_intro */
+#salon_intro {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 12% 0;
+    font-family: 'El Messiri';
+}
+
+.salon {
+    font-size: 80px;
+    color: #305745;
+    width: 400px;
+}
+
+.bg_rela {
+    position: relative;
+}
+
+.bg_logo {
+    position: absolute;
+    bottom: -142px;
+    left: -18px;
+    z-index: -1;
+}
+
+.salon_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_box {
+    width: 500px;
+}
+
+.intro_box h2 {
+    padding-bottom: 30px;
+}
+
+.intro_box p {
+    padding-bottom: 30px;
+}
+
+.hair {
+    display: inline-block;
+    font-size: 30px;
+    background-color: #051826;
+    color: #f2f2f2;
+    text-align: left;
+    width: 230px;
+    padding: 5px 10px
+}
+
+.makeup {
+    display: inline-block;
+    font-size: 30px;
+    background-color: #305745;
+    color: #f2f2f2;
+    text-align: right;
+    width: 230px;
+    padding: 5px 10px
+}
+
+
+/* styling */
+#styling {
+    background-color: #f2bbb6;
+    padding: 100px 0;
+}
+
+.styling_text {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.styling_text h1 {
+    font-family: 'El Messiri';
+    color: #f2f2f2;
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+
+.styl_go {
+    padding: 50px 0;
+}
+
+.styl_go a {
+    display: inline-block;
+    padding: 3px 40px;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+
+.border_p {
+    position: relative;
+}
+
+.border {
+    position: absolute;
+    bottom: 4%;
+    left: 6%;
+    z-index: 10;
+    height: 100px;
+    width: 2px;
+    background: #305745;
+}
+
+.hair_p {
+    font-weight: 500;
+    padding-top: 15px;
+    color: #305745;
+    padding-left: 40px;
+}
+
+
+
+/* 헤어 스와이퍼 스타일 */
+.hair_swiper img {
+    width: 100%;
+}
+
+.hair_swiper .swiper-slide h1 {
+    padding: 10px 0;
+}
+
+.hair_swiper .swiper-slide p {
+    padding-bottom: 30px;
+}
+
+.hair_swiper .swiper-slide {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.hair_swiper {
+    padding-bottom: 50px;
+}
+
+
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. */
+.hair_swiper .swiper-slide {
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+
+.hair_swiper .swiper-slide-active {
+    opacity: 1;
+    transition: all 0.5s;
+
+}
+
+/*불릿모양. swiper-pagination-bullet-active 클래스가 현재 색상이 들어간 부분 나타냄*/
+.swiper-pagination-bullet-active {
+    width: 30px;
+    border-radius: 4px;
+}
+
+.hair_pag span {
+    background-color: #f2f2f2;
+}
+
+
+/* makeup */
+#makeup {
+    display: flex;
+    align-items: center;
+}
+
+.main_makeup {
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+}
+
+#system {
+    width: 60%;
+}
+
+.main_makeup img {
+    width: 100%;
+}
+
+.img_box {
+    display: none;
+}
+
+.img_box.on {
+    display: block;
+}
+
+.makeup_text {
+    position: absolute;
+    bottom: 6%;
+    left: 13%;
+    z-index: 10;
+}
+
+.makeup_text h1 {
+    font-family: 'El Messiri';
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+
+.makeup_text p {
+    font-size: 25px;
+    color: #f2f2f2;
+}
+
+.system_text {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.system_text h1 {
+    font-family: 'El Messiri';
+    padding-right: 30px;
+    color: #f2bbb6;
+}
+
+.makeup_swiper {
+    padding: 0 20px;
+}
+
+.makeup_swiper p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 18px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.border2 {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+    z-index: 10;
+    height: 100px;
+    width: 2px;
+    background-color: #f2bbb6;
+}
+
+
+
+/* 메이크업 시스템 스와이퍼 스타일 */
+.makeup_swiper img {
+    width: 100%;
+}
+
+.makeup_swiper .swiper-slide h1 {
+    padding: 10px 0;
+}
+
+.makeup_swiper .swiper-slide p {
+    padding-bottom: 30px;
+}
+
+.makeup_swiper .swiper-slide {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.makeup_swiper {
+    padding-bottom: 50px;
+}
+
+
+/*지금 현재 가운데 보이고 있는 슬라이드는 .swiper-slide-active 라는 클래스를 가지는데 이를 이용해 스타일을 꾸며줌. */
+.makeup_swiper .swiper-slide {
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+
+.makeup_swiper .swiper-slide-active {
+    opacity: 1;
+    transition: all 0.5s;
+
+}
+
+/* studio */
+#studio {
+    background: url(../images/studio.jpg) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.studio_inner {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.studio_flex {
+    display: flex;
+}
+
+.studio_text {
+    width: 30%;
+    padding-top: 130px;
+}
+
+.studio_text h1 {
+    font-family: 'El Messiri';
+    color: #f2f2f2;
+    padding-bottom: 20px;
+    font-size: 70px;
+}
+
+.studio_text p {
+    text-align: center;
+}
+
+.studio_photo>img {
+    width: 100%;
+}
+
+.content_box {
+    position: absolute;
+    top: 27%;
+    left: 70%;
+    z-index: 20;
+}
+
+
+.studio_img {
+    position: absolute;
+    top: 8%;
+    right: 2%;
+    z-index: -1;
+    display: none;
+}
+
+#container {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.studio_img.on {
+    display: block;
+}
+
+
+
+/* footer */
+.footer {
+    background-color: #f2bbb67e;
+    padding: 50px 0;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+
+}
+
+.footer_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_flex ul {
+    text-indent: 30px;
+    font-size: 18px;
+}
+
+.footer_flex ul li {
+    padding: 3px 0;
+}
+
+.footer_flex ul li:first-child {
+    text-indent: 0;
+}
+
+.footer_flex ol {
+    font-family: 'El Messiri';
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 40px;
+
+}
+
+.ol_flex {
+    display: flex;
+}
+
+.ol_flex ol:last-child {
+    padding-right: 0;
+}
+
+.footer_flex ol li {
+    padding: 5px 0;
+}
+
+.footer_inner p {
+    text-align: right;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+/* top */
+.top {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f2bbb6;
+    position: fixed;
+    bottom: 6%;
+    right: 4%;
+    z-index: 30;
+    text-align: center;
+    line-height: 73px;
+    font-family: 'El Messiri';
+    font-weight: bold;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 태블릿 미디어쿼리 */
+@media(min-width:680px) and (max-width:1425px) {
+    #salon_intro {
+        width: 100%;
+        padding: 12% 0;
+    }
+
+    .salon_inner {
+        width: 100%;
+    }
+
+    /* makeup */
+    #makeup {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main_makeup {
+        width: 100%;
+    }
+
+    #system {
+        width: 100%;
+    }
+
+    .system_text {
+        padding-top: 50px;
+    }
+
+    .system_text p {
+        font-size: 18px;
+    }
+
+    .makeup_swiper img {
+        width: 80%;
+    }
+
+    .makeup_swiper p {
+        width: 300px;
+        padding-left: 10px;
+    }
+
+    /* studio */
+    .studio_inner {
+        width: 100%;
+    }
+
+    .studio_photo {
+        width: 80%;
+        margin-top: 80px;
+    }
+
+    .content_box {
+        width: 70%;
+        top: 17%;
+        left: 66%;
+    }
+
+    .tb {
+        width: 70%;
+    }
+
+    .studio_img {
+        width: 60%;
+        top: 6%;
+        right: 31%;
+    }
+}
+
+
+/* 추가미디어쿼리2 */
+@media(min-width:679px) and (max-width:945px) {
+    .footer_inner {
+        width: 100%;
+    }
+
+    .footer_flex {
+        flex-wrap: flow;
+    }
+
+    .footer_flex ul {
+        font-size: 15px;
+    }
+
+    .footer_flex ol {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+/* 추가미디어쿼리3 */
+@media(min-width:680px) and (max-width:1360px) {
+    #studio {
+        height: 80%;
+        padding-top: 50px;
+        padding-bottom: 150px;
+    }
+
+    .studio_flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .studio_text {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        width: 50%;
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .content_box {
+        top: 41%;
+        left: 48%;
+    }
+
+    .footer_inner {
+        width: 100%;
+    }
+}
+
+
+
+/* 모바일 미디어쿼리 */
+@media(max-width:679px) {
+    #salon_intro {
+        width: 100%;
+        padding: 12% 0;
+    }
+
+    .salon_inner {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .salon {
+        width: 100%;
+        padding: 150px 0;
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .hair_makeup {
+        text-align: center;
+    }
+
+    .intro_box {
+        width: 315px;
+        padding: 0 20px;
+    }
+
+    .intro_box p {
+        font-size: 15px;
+    }
+
+    .bg_logo {
+        width: 230px;
+        position: absolute;
+        bottom: 18%;
+        left: 5%;
+        z-index: -1;
+    }
+
+    /* styling */
+    #styling {
+        padding: 50px 0;
+    }
+
+    .styling_text h1 {
+        font-size: 50px;
+        padding-bottom: 30px;
+    }
+
+    .styling_text p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .styl_go {
+        padding: 30px 0;
+    }
+
+    .styl_go a {
+        font-size: 15px;
+    }
+
+    .border {
+        bottom: 30px;
+        left: 20px;
+        height: 60px;
+    }
+
+    .swiper-slide p {
+        font-size: 15px;
+        padding-top: 8px;
+        color: #305745;
+    }
+
+    .hair_p {
+        padding-left: 20px;
+    }
+
+    /* makeup */
+    #makeup {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main_makeup {
+        width: 100%;
+    }
+
+    .makeup_text {
+        bottom: 2%;
+        left: 10%;
+    }
+
+    .makeup_text h1 {
+        font-size: 50px;
+        padding-bottom: 5px;
+    }
+
+    .makeup_text p {
+        font-size: 20px;
+    }
+
+    #system {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .system_text p {
+        font-size: 18px;
+    }
+
+    .system_text {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 20px;
+    }
+
+    .system_text h1 {
+        padding-bottom: 20px;
+        padding-right: 0;
+    }
+
+    .border2 {
+        bottom: 30px;
+        left: 20px;
+        height: 60px;
+    }
+
+    .makeup_swiper p {
+        font-size: 14px;
+        line-height: 15px;
+        padding-top: 5px;
+    }
+
+
+    /* studio */
+    #studio {
+        padding-bottom: 0
+    }
+
+    .studio_inner {
+        width: 100%;
+    }
+
+    .studio_photo {
+        padding: 0 20px;
+    }
+
+    .tb {
+        width: 70%;
+    }
+
+    .studio_img {
+        width: 60%;
+        top: 6%;
+        right: 31%;
+    }
+
+    .studio_flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .studio_text {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        width: 100%;
+        position: absolute;
+        top: -10%;
+    }
+
+
+
+    .content_box {
+        width: 100%;
+        top: 62%;
+        left: 25%;
+    }
+
+    /* footer */
+    .footer {
+        padding: 20px;
+    }
+
+    .footer_inner {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .footer_flex {
+        display: flow;
+        text-align: center;
+    }
+
+    .footer_flex ul {
+        font-size: 15px;
+    }
+
+    .footer_flex ul li {
+        padding: 1px 0;
+    }
+
+    .ol_flex {
+        display: flex;
+    }
+
+    .ol_flex ol {
+        font-size: 20px;
+        font-weight: bold;
+        padding-right: 20px;
+        text-indent: 20px;
+    }
+
+    .footer_flex ul {
+        padding: 20px 0;
+        text-indent: 15px;
+    }
+}
